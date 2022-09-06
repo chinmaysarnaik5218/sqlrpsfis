@@ -52,19 +52,19 @@ CREATE TABLE tblEmpProjectTasks(
 
 
 
---- insert values client
+
 INSERT INTO tblClient(Client_ID,Cname,Address,Email,Phone,Business) VALUES (1001,'ACME Utilities','Noida','contact@acmeutil.com',9567880032,'Manufacturing');
 INSERT INTO tblClient(Client_ID,Cname,Address,Email,Phone,Business) VALUES (1002,'Trackon Consultants','Mumbai','consult@trackon.com',8734210090,'Consultant');
 INSERT INTO tblClient(Client_ID,Cname,Address,Email,Phone,Business) VALUES (1003,'MoneySaver Distributors','Kolkata','save@moneysaver.com',7799886655,'Reseller');
 INSERT INTO tblClient(Client_ID,Cname,Address,Email,Phone,Business) VALUES (1004,'Lawful Corp','Chennai','justice@lawful.com',9210342219,'Professional');
 
--- insert values department
+
 
 INSERT INTO tblDepartment(Deptno,Dname,Loc) VALUES (10,'Design','Pune');
 INSERT INTO tblDepartment(Deptno,Dname,Loc) VALUES (20,'Development','Pune');
 INSERT INTO tblDepartment(Deptno,Dname,Loc) VALUES (30,'Testing','Mumbai');
 INSERT INTO tblDepartment(Deptno,Dname,Loc) VALUES (40,'Document','Mumbai');
--- insert values employee
+
 
 INSERT INTO tblEmployee(Empno,Ename,Job,Salary,Deptno) VALUES (7001,'Sandeep','Analyst',25000,10);
 INSERT INTO tblEmployee(Empno,Ename,Job,Salary,Deptno) VALUES (7002,'Rajesh','Designer',30000,10);
@@ -79,7 +79,7 @@ INSERT INTO tblEmployee(Empno,Ename,Job,Salary,Deptno) VALUES (7010,'Smita','Ana
 INSERT INTO tblEmployee(Empno,Ename,Job,Salary,Deptno) VALUES (7011,'Anand','Project Mgr',65000,10);
 
 
--- insert values projects
+
 
 INSERT INTO tblProject(Project_ID,Descr,Start_Date,Planned_End_Date,Actual_End_date,Budget,Client_ID) VALUES (401,'Inventory','1-Apr-11','1-Oct-11','31-Oct-11',150000,1001);
 INSERT INTO tblProject(Project_ID,Descr,Start_Date,Planned_End_Date,Actual_End_date,Budget,Client_ID) VALUES (402,'Accounting','1-Aug-11','1-Jan-12',NULL,500000,1002);
@@ -87,7 +87,7 @@ INSERT INTO tblProject(Project_ID,Descr,Start_Date,Planned_End_Date,Actual_End_d
 INSERT INTO tblProject(Project_ID,Descr,Start_Date,Planned_End_Date,Actual_End_date,Budget,Client_ID) VALUES (404,'Contact Mgmt','1-Nov-11','31-Dec-11',NULL,50000,1004);
 
 
--- insert values EmpProjectTasks
+
 
 INSERT INTO tblEmpProjectTasks(Project_ID,Empno,Start_Date,End_Date,Task,Status) VALUES (401,7001,'1-Apr-11','20-Apr-11','System Analysis','Completed');
 INSERT INTO tblEmpProjectTasks(Project_ID,Empno,Start_Date,End_Date,Task,Status) VALUES (401,7002,'21-Apr-11','30-May-11','System Design','Completed');
