@@ -1,5 +1,5 @@
-create database CHINMAYDB;
-USE CHINMAYDB;
+create database ASSIGNMENTDB;
+USE ASSIGNMENTDB;
 
 CREATE TABLE tblClient(
    Client_ID NUMERIC(4) NOT NULL PRIMARY KEY ,
@@ -109,4 +109,3 @@ select * from tblDepartment;
 select * from tblEmployee;
 select * from tblProject;
 select * from tblEmpProjectTasks;
-
